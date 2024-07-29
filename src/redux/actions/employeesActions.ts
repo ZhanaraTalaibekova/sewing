@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import i18n from 'i18next';
 
 export const getEmployees = createAsyncThunk<Employees[], void>('', async () => {
-  const response = await axios.get(`https://mp822b8404ee955c667a.free.beeceptor.com/api/employees`);
+  const response = await axios.get(`https://ca44b4353d346b035e24.free.beeceptor.com/api/employees`);
   return response.data;
 });
 
@@ -13,7 +13,7 @@ export const createEmployee = createAsyncThunk<Employees, Employees, { rejectVal
   'employee/createEmployee',
   async (employee, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`https://mp822b8404ee955c667a.free.beeceptor.com/api/employees`, employee);
+      const response = await axios.post(`https://ca44b4353d346b035e24.free.beeceptor.com/api/employees`, employee);
       toast.success(i18n.t('employee.createdSuccess'));
       return response.data;
     } catch (error) {
@@ -28,7 +28,7 @@ export const deleteEmployee = createAsyncThunk<void, number, { rejectValue: stri
   'employee/deleteEmployee',
   async (employeeId, { rejectWithValue }) => {
     try {
-      await axios.delete(`https://mp822b8404ee955c667a.free.beeceptor.com/api/employees/${employeeId}`);
+      await axios.delete(`https://ca44b4353d346b035e24.free.beeceptor.com/api/${employeeId}`);
       toast.success(i18n.t('employee.deletedSuccess'));
     } catch (error) {
       let errorMessage = i18n.t('employee.deleteError');
