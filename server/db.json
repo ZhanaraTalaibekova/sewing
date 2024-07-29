@@ -1,0 +1,119 @@
+{
+  "employees": [
+    {
+      "firstName": "alina",
+      "lastName": "alina",
+      "phoneNumber": "1234",
+      "positions": {
+        "dressmaker": true,
+        "cutter": false,
+        "technologist": false
+      },
+      "team": false,
+      "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg",
+      "id": 1
+    },
+    {
+      "firstName": "madina",
+      "lastName": "madina",
+      "phoneNumber": "12345t",
+      "positions": {
+        "dressmaker": false,
+        "cutter": true,
+        "technologist": false
+      },
+      "team": false,
+      "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
+      "id": 2
+    },
+    {
+      "firstName": "sezim",
+      "lastName": "sezim",
+      "phoneNumber": "+996 703010039",
+      "positions": {
+        "dressmaker": true,
+        "cutter": true,
+        "technologist": false
+      },
+      "team": false,
+      "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
+      "id": 3
+    }
+  ],
+  "employeesPositions": {
+    "technologists": [
+      {
+        "firstName": "f",
+        "lastName": "d",
+        "phoneNumber": "123456",
+        "positions": {
+          "dressmaker": false,
+          "cutter": false,
+          "technologist": true
+        },
+        "team": false,
+        "userImage": ""
+      }
+    ],
+    "dressmakers": [
+      {
+        "firstName": "sezim",
+        "lastName": "sezim",
+        "phoneNumber": "+996 703010039",
+        "positions": {
+          "dressmaker": true,
+          "cutter": true,
+          "technologist": false
+        },
+        "team": false,
+        "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg"
+      }
+    ],
+    "cutters": [
+      {
+        "firstName": "sezim",
+        "lastName": "sezim",
+        "phoneNumber": "+996 703010039",
+        "positions": {
+          "dressmaker": true,
+          "cutter": true,
+          "technologist": false
+        },
+        "team": false,
+        "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg"
+      }
+    ]
+  },
+  "users": [
+    {
+      "email": "qwerty@gmail.com",
+      "password": "$2a$10$TlY0PHknRJSCDmWu1Pvl/uUm3U.UJNEvXeBkLYwv/NhtTQNw76v0i",
+      "userName": "qwerty",
+      "id": 1
+    },
+    {
+      "email": "user2@gmail.com",
+      "password": "$2a$10$TU9N5qgTdO.MylhACqikH.zgToGqQDa6R06bSHevB5i3NYUhcmi3i",
+      "userName": "qwerty",
+      "id": 2
+    },
+    {
+      "email": "r@gmail.com",
+      "password": "$2a$10$ollRPrNbzSIyVKwC.G4Ab.fLCU0kYNpq7aqH0RWHZS1TuBnbMOPa2",
+      "userName": "r",
+      "id": 3
+    },
+    {
+      "email": "sdf@gmail.com",
+      "password": "$2a$10$A6mx/tPUqZQJ4ug5mE6Uj.cfViJ1ni6V1RH.BPciK.o4nrDKcMGiC",
+      "userName": "ertyui",
+      "id": 4
+    },
+    {
+      "email": "qwerty19@gmail.com",
+      "password": "$2a$10$UVeLOZQBBfgNoyCQVhiTbOPJm9UyUIgHP29AQO83cdPP4c8HABpCC",
+      "userName": "qwerty19",
+      "id": 5
+    }
+  ]
+}
