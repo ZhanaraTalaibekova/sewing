@@ -1,9 +1,8 @@
 import { Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, Grid, InputLabel, MenuItem, Paper, Select, TextField, Typography } from "@mui/material";
 import { CustomPaper } from "../CustomPaper";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
-import { useNavigate } from "react-router";
 import { Employees } from "../../../data";
-import { addEmployeePosition, AppDispatch, createEmployee } from "../../../redux";
+import { AppDispatch, createEmployee } from "../../../redux";
 import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
 
@@ -29,7 +28,6 @@ export const NewEmployee = () => {
   const onSubmit: SubmitHandler<Employees> = async (data) => {
     try {
       await dispatch(createEmployee(data)).unwrap();
-      await dispatch(addEmployeePosition(data)).unwrap();
       reset({
         firstName: '',
         lastName: '',
@@ -170,28 +168,3 @@ export const NewEmployee = () => {
     </CustomPaper>
   );
 };
-
-
-{/* <Controller
-              name="userImage"
-              control={control}
-              // defaultValue=""
-              render={({ field }) => (
-                <Button
-                  variant="contained"
-                  component="label"
-                  startIcon={<CloudUpload />}
-                >
-                  Загрузить изображение
-                  <input
-                    type="file"
-                    hidden
-                    onChange={(e) => {
-                      if (e.target.files && e.target.files[0]) {
-                        field.onChange(e.target.files[0]);
-                      }
-                    }}
-                  />
-                </Button>
-              )}
-            /> */}

@@ -1,10 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { employeesPositionSlice, employeesSlice } from './slices';
+import { employeesSlice } from './slices';
 
 export const store = configureStore({
   reducer: {
     employees: employeesSlice.reducer,
-    employeesPositions: employeesPositionSlice.reducer,
   },
 });
 

@@ -26,44 +26,41 @@ export const Header = () => {
 
   return (
     <div className="container">
-      {token && (
-        <>
-          <header className={styles.header}>
-            <Grid container alignItems="center">
-              <Grid item xs={12} sm={6} className={styles['nav-links']}>
-                <Link to={Routes.Home}>{t('navigation.home')}</Link>
-                <Link to={Routes.AddEmployee}>{t('navigation.addEmployee')}</Link>
-              </Grid>
-              <Grid item xs={12} sm={6} className="flex justify-end items-center gap-4">
-                <Select
-                  value={i18n.language}
-                  onChange={changeLanguage}
-                  className={styles['language-select']}
-                  variant="outlined"
-                  size="small"
-                  sx={{ minWidth: 50 }}
-                >
-                  <MenuItem value="en">EN</MenuItem>
-                  <MenuItem value="ru">RU</MenuItem>
-                </Select>
-                <Button
-                  className={styles['logout-button']}
-                  variant="contained"
-                  sx={{ minWidth: 120 }}
-                  color="primary"
-                  onClick={logOut}
-                >
-                  {t('navigation.logout')}
-                </Button>
-              </Grid>
-            </Grid>
-          </header>
-          <Divider />
-          <div>
-            <CustomBreadcrumbs />
-          </div>
-        </>
-      )}
+      <header className={styles.header}>
+        <Grid container alignItems="center">
+          <Grid item xs={12} sm={6} className={styles['nav-links']}>
+            <Link to={Routes.Home}>{t('navigation.home')}</Link>
+            <Link to={Routes.AddEmployee}>{t('navigation.addEmployee')}</Link>
+          </Grid>
+          <Grid item xs={12} sm={6} className="flex justify-end items-center gap-4">
+            <Select
+              value={i18n.language}
+              onChange={changeLanguage}
+              className={styles['language-select']}
+              variant="outlined"
+              size="small"
+              sx={{ minWidth: 50 }}
+            >
+              <MenuItem value="en">EN</MenuItem>
+              <MenuItem value="ru">RU</MenuItem>
+            </Select>
+            <Button
+              className={styles['logout-button']}
+              variant="contained"
+              sx={{ minWidth: 120 }}
+              color="primary"
+              onClick={logOut}
+              disabled
+            >
+              {t('navigation.logout')}
+            </Button>
+          </Grid>
+        </Grid>
+      </header>
+      <Divider />
+      <div>
+        <CustomBreadcrumbs />
+      </div>
     </div>
   );
 };

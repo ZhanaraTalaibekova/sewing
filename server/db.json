@@ -38,6 +38,19 @@
       "team": false,
       "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg",
       "id": 3
+    },
+    {
+      "firstName": "dc",
+      "lastName": "dc",
+      "phoneNumber": "ds",
+      "positions": {
+        "dressmaker": true,
+        "cutter": false,
+        "technologist": false
+      },
+      "team": false,
+      "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg",
+      "id": 4
     }
   ],
   "employeesPositions": {
@@ -57,16 +70,16 @@
     ],
     "dressmakers": [
       {
-        "firstName": "sezim",
-        "lastName": "sezim",
-        "phoneNumber": "+996 703010039",
+        "firstName": "dc",
+        "lastName": "dc",
+        "phoneNumber": "ds",
         "positions": {
           "dressmaker": true,
-          "cutter": true,
+          "cutter": false,
           "technologist": false
         },
         "team": false,
-        "userImage": "https://i.pinimg.com/564x/23/9c/52/239c5216f7ac369fdf95996024a54d76.jpg"
+        "userImage": "https://i.pinimg.com/564x/2d/2c/3b/2d2c3b69d4b78fbb4675385b6c2d2a33.jpg"
       }
     ],
     "cutters": [
@@ -114,6 +127,12 @@
       "password": "$2a$10$UVeLOZQBBfgNoyCQVhiTbOPJm9UyUIgHP29AQO83cdPP4c8HABpCC",
       "userName": "qwerty19",
       "id": 5
+    },
+    {
+      "email": "fddf@gmail.com",
+      "password": "$2a$10$ISaJ9/EAl4wsz1lbvPKJDuabiCxZPYyDnygW6NqRNZbQT/Vpb226.",
+      "userName": "vsdv",
+      "id": 6
     }
   ]
 }

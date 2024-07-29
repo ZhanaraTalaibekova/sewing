@@ -11,19 +11,11 @@ export const router = createBrowserRouter([
       {
         index: true,
         path: Routes.Home,
-        element: (
-          <PrivateRoute>
-            <HomePage />,
-          </PrivateRoute>
-        ),
+        element: <HomePage />,
       },
       {
         path: Routes.AddEmployee,
-        element: (
-          <PrivateRoute>
-            <AddEmployeePage />
-          </PrivateRoute>
-        ),
+        element: <AddEmployeePage />,
       },
       {
         path: Routes.Employees,
@@ -33,14 +25,14 @@ export const router = createBrowserRouter([
         path: Routes.InDev,
         element: <InDev />,
       },
-      {
-        path: Routes.Register,
-        element: <Register />,
-      },
-      {
-        path: Routes.Login,
-        element: <Login />,
-      },
+      // {
+      //   path: Routes.Register,
+      //   element: <Register />,
+      // },
+      // {
+      //   path: Routes.Login,
+      //   element: <Login />,
+      // },
     ],
   },
 ]);

@@ -19,9 +19,3 @@ export enum Status {
   SUCCEEDED = 'succeeded',
   FAILED = 'failed',
 }
-
-export interface EmployeesPositions {
-  cutters: Employees[];
-  dressmakers: Employees[];
-  technologists: Employees[];
-}

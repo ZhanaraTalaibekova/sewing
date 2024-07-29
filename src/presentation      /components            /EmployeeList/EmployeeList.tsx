@@ -12,8 +12,6 @@ import styles from './EmployeeList.module.scss';
 export const EmployeeList: React.FC = () => {
   const { t } = useTranslation();
   const dispatch: AppDispatch = useDispatch();
-  const navigate = useNavigate();
-  const { data: employeesPositions, status, error } = useSelector((state: RootState) => state.employeesPositions);
   const { data: employees } = useSelector((state: RootState) => state.employees);
 
   const [technologists, setTechnologists] = useState<Employees[]>([]);
@@ -41,30 +39,7 @@ export const EmployeeList: React.FC = () => {
 
   useEffect(() => {
     dispatch(getEmployees());
-    if (status === 'succeeded') {
-      console.log('Employees loaded successfully:', employeesPositions);
-    } else if (status === 'failed') {
-      console.error('Failed to load employees:', error);
-    }
-  }, [status, employeesPositions, error]);
-
-  const handleNavigation = (position: string) => {
-    let route = '';
-    switch (position) {
-      case 'technologist':
-        route = '/technologists';
-        break;
-      case 'dressmaker':
-        route = '/dressmakers';
-        break;
-      case 'cutter':
-        route = '/cutters';
-        break;
-      default:
-        route = '/';
-    }
-    navigate(route);
-  };
+  }, []);
 
   const renderEmployeeSection = (employees: Employees[], title: string, positionKey: string) => {
     return (
